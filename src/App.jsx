@@ -7,6 +7,7 @@ import Sobre from './pages/Sobre';
 import Pagina404 from './pages/Page404';
 import Header from './components/Header';
 import Post from './pages/Post';
+import PostList from './components/PostList';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path={'/'} element={<Home/>}/>
+        <Route path={'/blog'} element={<Home />}/>
         <Route path={'/sobre'} element={<Sobre />}/>
         <Route path={'/posts/:id'} element={<Post />}/>
         <Route path='*' element={<Pagina404 />}/>
